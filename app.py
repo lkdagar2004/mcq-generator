@@ -1,3 +1,4 @@
+import streamlit as st
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 import spacy
@@ -160,3 +161,4 @@ if __name__ == "__main__":
     # Use a non-default port to avoid conflicts; change as needed.
     port = int(os.environ.get("PORT", 5001))
     app.run(debug=True, port=port, host="127.0.0.1")
+
